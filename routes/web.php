@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::get('/','Admin\IndexController@index');
+Route::get('/admin/bannerAdd','Admin\IndexController@bannerAdd');
